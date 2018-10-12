@@ -14,8 +14,8 @@ sourceCompatibility = 1.8
 
 tasks.withType(KotlinCompile) {
     kotlinOptions {
-        freeCompilerArgs = ["-Xjsr305=strict"]
-        jvmTarget = "1.8"
+        freeCompilerArgs += '-Xjsr305=strict'
+        jvmTarget = '1.8'
     }
 }
 
@@ -25,14 +25,14 @@ repositories {
 
 // Move to buildSrc/src/main/groovy to reference it from sub project build scripts
 interface DependencyVersions {
-    def springCloudVersion = 'Finchley.SR1'
+    String springCloudVersion = 'Finchley.SR1'
 }
 
 dependencies {
-    implementation('org.springframework.cloud:spring-cloud-starter-config')
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 dependencyManagement {
