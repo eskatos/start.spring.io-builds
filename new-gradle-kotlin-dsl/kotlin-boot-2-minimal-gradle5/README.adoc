@@ -1,0 +1,7 @@
+= Minimal Kotlin Spring Boot Application with Gradle Kotlin DSL build
+
+* Requires Gradle 5 for the Kotlin DSL
+* Very similar to Java and Groovy applications, just has Kotlin compiler configuration added
+* Kotlin compiler configuration is now applied to all `KotlinCompile` tasks
+* Prefer the `plugins {}` block over `buildscript { dependencies { classpath(..) } }` & `apply plugin:id`
+* Plugin repositories moved to `settings.gradle`

@@ -1,0 +1,8 @@
+= Kotlin Spring Boot Application with dependencies with Gradle 5 Groovy DSL build
+
+* Requires Gradle 5 to consume BOMs using `enforcedPlatform(..)`
+* Very similar to Java and Groovy applications, just has Kotlin compiler configuration added
+* Kotlin compiler configuration is now applied to all `KotlinCompile` tasks
+* Prefer the `plugins {}` block over `buildscript { dependencies { classpath(..) } }` & `apply plugin:id`
+* Plugin repositories moved to `settings.gradle`
+* Dependency versions declared in a type instead of as extra properties
