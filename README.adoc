@@ -4,8 +4,9 @@
 Builds generated from current `start.spring.io`
 
 `./new-gradle-groovy-dsl`::
-Enhanced builds to leverage Gradle best practices
+Enhanced builds to leverage Gradle best practices.
+Gradle version changed from 4.8.1 to 4.10.2 to support SNAPSHOTs in `plugins {}`.
 
 `./new-gradle-kotlin-dsl`::
 Translation to the Gradle Kotlin DSL of enhanced builds
-
+Gradle version changed to Gradle 5.0 for the Kotlin DSL.
