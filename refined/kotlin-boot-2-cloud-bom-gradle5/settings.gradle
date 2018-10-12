@@ -1,29 +1,7 @@
 pluginManagement {
-
     repositories {
         mavenCentral()
         gradlePluginPortal()
-    }
-
-    def kotlinVersion = '1.2.51'
-    def springBootVersion = '2.0.5.RELEASE'
-    def springDependencyManagementVersion = '1.0.6.RELEASE'
-
-    resolutionStrategy {
-        eachPlugin {
-            switch (requested.id.id) {
-                case 'org.jetbrains.kotlin.jvm':
-                case 'org.jetbrains.kotlin.plugin.spring':
-                    useVersion(kotlinVersion)
-                    break
-                case 'org.springframework.boot':
-                    useVersion(springBootVersion)
-                    break
-                case 'io.spring.dependency-management':
-                    useVersion(springDependencyManagementVersion)
-                    break
-            }
-        }
     }
 }
 
