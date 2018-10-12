@@ -1,6 +1,5 @@
 = Minimal Kotlin Spring Boot WAR Application with Gradle Groovy DSL build
 
-* Requires Gradle 5 for the Kotlin DSL
 * Very similar to Java and Groovy applications, just has Kotlin compiler configuration added
 * Kotlin compiler configuration is now applied to all `KotlinCompile` tasks
 * Prefer the `plugins {}` block over `buildscript { dependencies { classpath(..) } }` & `apply plugin:id`

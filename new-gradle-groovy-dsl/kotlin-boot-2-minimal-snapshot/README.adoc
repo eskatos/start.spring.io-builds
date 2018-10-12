@@ -1,6 +1,5 @@
 = Minimal Kotlin Spring Boot SNAPSHOT Application with Gradle 5 Groovy DSL build
 
-* Requires Gradle 5 to support SNAPSHOTs in the `plugins {}` block
 * Very similar to Java and Groovy applications, just has Kotlin compiler configuration added
 * Kotlin compiler configuration is now applied to all `KotlinCompile` tasks
 * Prefer the `plugins {}` block over `buildscript { dependencies { classpath(..) } }` & `apply plugin:id`
